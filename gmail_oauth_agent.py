@@ -92,7 +92,7 @@ async def build_agent():
 
 
 # ------------------------------------------------------------------ #
-# 4.  Main chat loop                                                 #
+# 4.  Main chat loop WITH MEMORY                                     #
 # ------------------------------------------------------------------ #
 async def main():
     write_oauth_json_if_needed()
@@ -100,19 +100,27 @@ async def main():
         run_oauth_flow()
 
     agent = await build_agent()
+
+    # --- initialise history with system prompt -------------------- #
+    history = [{"role": "system", "content": SYSTEM_PROMPT}]
+
     print("\nAsk me about your Gmail (type 'quit' to exit):\n")
+
     while True:
-        q = input("> ").strip()
-        if q.lower() in {"quit", "exit"}:
+        user_text = input("> ").strip()
+        if user_text.lower() in {"quit", "exit"}:
             break
-        result = await agent.ainvoke(
-            {"messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": q},
-            ]}
-        )
-        print("\n" + result["messages"][-1].content + "\n")
 
+        # 1) add user message to history
+        history.append({"role": "user", "content": user_text})
 
-if __name__ == "__main__":
-    asyncio.run(main())
+        # 2) call the agent with the full history
+        result = await agent.ainvoke({"messages": history})
+
+        # 3) pull the assistant’s reply and print it
+        assistant_msg = result["messages"][-1]
+        print("\n" + assistant_msg.content + "\n")
+
+        # 4) append *all* returned messages to the history
+        #    (includes tool calls / intermediate thoughts if any)
+        history.extend(result["messages"][len(history):])
