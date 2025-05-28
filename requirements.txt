@@ -1,0 +1,7 @@
+langchain
+langchain-community
+langchain-openai
+langgraph
+langchain-mcp-adapters
+python-dotenv
+email-client @ git+https://github.com/ZilongXue/claude-post@main

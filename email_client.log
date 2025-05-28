@@ -1,0 +1,36 @@
+2025-05-28 15:07:03,614 - DEBUG - Initializing server 'email'
+2025-05-28 15:07:03,614 - DEBUG - Registering handler for ListToolsRequest
+2025-05-28 15:07:03,614 - DEBUG - Registering handler for CallToolRequest
+2025-05-28 15:07:03,614 - DEBUG - Using proactor: IocpProactor
+2025-05-28 15:07:03,625 - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-28 15:07:03,625 - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x0000017BBB264E10>
+2025-05-28 15:07:03,625 - INFO - Processing request of type ListToolsRequest
+2025-05-28 15:07:03,625 - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-28 15:07:03,626 - DEBUG - Response sent
+2025-05-28 15:17:45,366 - DEBUG - Initializing server 'email'
+2025-05-28 15:17:45,366 - DEBUG - Registering handler for ListToolsRequest
+2025-05-28 15:17:45,366 - DEBUG - Registering handler for CallToolRequest
+2025-05-28 15:17:45,367 - DEBUG - Using proactor: IocpProactor
+2025-05-28 15:17:45,376 - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-28 15:17:45,376 - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000002828B884E10>
+2025-05-28 15:17:45,376 - INFO - Processing request of type ListToolsRequest
+2025-05-28 15:17:45,376 - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-28 15:17:45,376 - DEBUG - Response sent
+2025-05-28 15:25:53,303 - DEBUG - Initializing server 'email'
+2025-05-28 15:25:53,303 - DEBUG - Registering handler for ListToolsRequest
+2025-05-28 15:25:53,303 - DEBUG - Registering handler for CallToolRequest
+2025-05-28 15:25:53,303 - DEBUG - Using proactor: IocpProactor
+2025-05-28 15:25:53,314 - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-28 15:25:53,314 - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x000001FEB0FC4E10>
+2025-05-28 15:25:53,314 - INFO - Processing request of type ListToolsRequest
+2025-05-28 15:25:53,314 - DEBUG - Dispatching request of type ListToolsRequest
+2025-05-28 15:25:53,315 - DEBUG - Response sent
+2025-05-28 15:26:05,154 - DEBUG - Initializing server 'email'
+2025-05-28 15:26:05,154 - DEBUG - Registering handler for ListToolsRequest
+2025-05-28 15:26:05,154 - DEBUG - Registering handler for CallToolRequest
+2025-05-28 15:26:05,154 - DEBUG - Using proactor: IocpProactor
+2025-05-28 15:26:05,165 - DEBUG - Received message: root=InitializedNotification(method='notifications/initialized', params=None, jsonrpc='2.0')
+2025-05-28 15:26:05,166 - DEBUG - Received message: <mcp.shared.session.RequestResponder object at 0x00000202C26A4E10>
+2025-05-28 15:26:05,166 - INFO - Processing request of type CallToolRequest
+2025-05-28 15:26:05,166 - DEBUG - Dispatching request of type CallToolRequest
+2025-05-28 15:26:06,554 - DEBUG - Response sent
