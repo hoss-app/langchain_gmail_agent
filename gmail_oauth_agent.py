@@ -1,9 +1,6 @@
 """
 Gmail assistant (LangChain + Gmail AutoAuth MCP)
 -----------------------------------------------
-* Secrets live only in .env
-* First run opens the Google consent screen automatically
-* Keeps chat history in-memory so “yes” really sends the drafted email
 """
 
 import asyncio
